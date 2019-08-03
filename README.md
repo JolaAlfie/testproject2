@@ -2,6 +2,7 @@
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 [![Build Status](https://travis-ci.org/JolaAlfie/testproject2.svg?branch=master)](https://github.com/JolaAlfie/testproject2)
+
 PCCA Virtual Smart Card (Android) is a software module that leverages the hardware secure enclave in smartphones to store and operate transient private keys. It offers functionalities such as
 
 - Generating transient private keys in the hardware secure enclave;
@@ -12,15 +13,25 @@ PCCA Virtual Smart Card (Android) is a software module that leverages the hardwa
 
 ### Requirement
 
-* Android SDK 23.0+
+* Android SDK 28.0+
 
 ### How to use
 
 1. Download this project
 
-2. Build this project, and a framework file will be generated
+2. Build the library using following command
 
-3. Make the framework file part of your project
+##### On Windows
+```
+gradlew.bat build
+```
+
+##### On macOS/Linux
+```
+./gradlew build
+```
+
+3. Make the library file part of your project
 
 ### License
 
