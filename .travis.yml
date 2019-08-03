@@ -5,3 +5,16 @@ android:
       - build-tools-23.0.1
       # The SDK version used to compile your project
       - android-23
+
+before_install:
+
+  # for gradle output style
+  - export TERM=dumb
+
+  # environment info
+  - ./gradlew -v
+  - uname -a
+
+# Let's try to build...
+#install: ./gradlew clean build
+script: ./gradlew check
