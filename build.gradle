@@ -26,9 +26,18 @@ android {
     }
 }
 
+buildscript {
+    repositories {
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.2'
+    }
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-//    implementation files('libs/bcpkix-jdk15on-1.60.jar', 'libs/bcprov-jdk15on-1.60.jar')
     // https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15on
     implementation group: 'org.bouncycastle', name: 'bcprov-jdk15on', version: '1.60'
     // https://mvnrepository.com/artifact/org.bouncycastle/bcpkix-jdk15on
