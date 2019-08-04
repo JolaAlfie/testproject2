@@ -13,7 +13,7 @@ PCCA Virtual Smart Card (Android) is a software module that leverages the hardwa
 
 ### Requirement
 
-* Android SDK 28.0+
+* Android SDK 23.0+
 
 ### How to use
 
